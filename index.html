@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,6 +25,11 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+              },
+              fontFamily: {
+                poppins: ['Poppins', 'sans-serif'],
+                manrope: ['Manrope', 'sans-serif'],
+                inter: ['Inter', 'sans-serif']
               }
             }
           }
@@ -34,6 +39,30 @@
 </head>
 <body>
     <!-- ==================== header -->
+    <header id="header" class="w-full min-h-[100vh] bg-[#264653]">
+        <div class="container mx-auto px-5">
+          <div id="navbar" class="w-full flex items-center justify-between  py-[38px] md:py-[40px] lg:py-[42px]">
+            <div class="pointer-events-none flex-1">
+              <h1 class="text-2xl font-poppins text-white font-bold">Biker<span class="text-[#E76F51]">.</span> Zone</h1>
+            </div>
+            <div class="flex flex-1 items-center justify-end">
+              <nav class="hidden md:block">
+                <ul class="flex items-center justify-center space-x-9">
+                  <li class="text-base leading-6 font-medium font-poppins"><a href="#" class="text-white hover:text-[#E76F51] transition duration-300">Home</a></li>
+                  <li class="text-base leading-6 font-medium font-poppins"><a href="#" class="text-white hover:text-[#E76F51] transition duration-300">Shop</a></li>
+                  <li class="text-base leading-6 font-medium font-poppins"><a href="#" class="text-white hover:text-[#E76F51] transition duration-300">News</a></li>
+                  <li class="text-base leading-6 font-medium font-poppins"><a href="#" class="text-white hover:text-[#E76F51] transition duration-300">Contact</a></li>
+                </ul>
+              </nav>
+              <div class="md:ml-[50px] lg:ml-[100px] hidden md:block">
+                <button class="text-base leading-6 font-medium font-poppins text-white py-[10px] px-6 bg-[#E76F51] rounded-[5px] hover:bg-[#e75c3a] transition duration-300 ease-in-out">Login</button>
+              </div>
+            </div>
+            <div id="#" class="md:hidden sm:block">
+              <i class='bx bx-menu text-3xl text-white cursor-pointer'></i>
+            </div>
+          </div>
+    </header>
     <!-- ==================== header -->
     <!-- ==================== main -->
     <!-- ==================== main -->
